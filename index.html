@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siralbanna | Authentic Moroccan Spices</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              siral: {
+                50: '#fbf8f3',
+                100: '#f5efe4',
+                200: '#eaddc7',
+                300: '#dcc3a0',
+                400: '#ca9e72',
+                500: '#be8353',
+                600: '#b06a43',
+                700: '#925237', // Spice Rust
+                800: '#794331',
+                900: '#62382a',
+                gold: '#d4af37',
+              }
+            },
+            fontFamily: {
+              serif: ['Playfair Display', 'serif'],
+              sans: ['Lato', 'sans-serif'],
+              arabic: ['Amiri', 'serif'],
+            },
+            animation: {
+              'shimmer': 'shimmer 2s linear infinite',
+              'fade-in': 'fadeIn 0.5s ease-out',
+            },
+            keyframes: {
+              shimmer: {
+                '0%': { backgroundPosition: '-1000px 0' },
+                '100%': { backgroundPosition: '1000px 0' }
+              },
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' }
+              }
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f5efe4; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #be8353; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #925237; 
+      }
+
+      /* Zellige Pattern Background */
+      .bg-zellige {
+        background-color: #fbf8f3;
+        background-image: radial-gradient(#dcc3a0 1px, transparent 1px);
+        background-size: 20px 20px;
+      }
+
+      /* Shimmer Effect for Top Bar */
+      .shimmer-bg {
+        background: linear-gradient(to right, #925237 4%, #b06a43 25%, #925237 36%);
+        background-size: 1000px 100%;
+      }
+
+      /* Smooth Scroll */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-siral-50 text-siral-900 antialiased selection:bg-siral-200">
+    <div id="root"></div>
+  </body>
+</html>
